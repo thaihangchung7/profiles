@@ -1,0 +1,43 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+configuration {
+  modi: "drun,filebrowser";
+  font: "Iosevka Nerd 10";
+  location: 7;
+  yoffset: -25;
+  xoffset: 4;
+  show-icons: true;
+  sidebar-mode: true;
+  scroll-method: 1;
+  me-accept-entry: "MousePrimary";
+  me-select-entry: "";
+
+  display-drun: "Apps";
+  display-filebrowser: "Files";
+  display-window: "Windows";
+
+  pid: "/run/user/1000/rofi.pid";
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+
+  kb-mode-next: "Super+Right";
+  kb-mode-previous: "Super+Left";
+
+}
+
+listview {
+  columns: 1;
+}
+
+window {
+  width: 30%;
+  height: 70%;
+  border-radius: 2px;
+}
+
+#window {
+  padding: 1ch;
+}
